@@ -1,19 +1,3 @@
-/*async function FetchData(onclick) {
-  try {
-    const res = await fetch("https://openweathermap.org/");
-    const data = await res.json();
-    data.forEach((elements) => {
-      const countryobject = {
-        ...elements,
-       weather: elements.weather
-      };
-      createCountryCard(countryobject);
-    });
-  } catch (error) {
-    console.log(error);
-  }
-}*/
-
 
 fetch("https://restcountries.com/v3.1/all")
   .then((response) => response.json())
